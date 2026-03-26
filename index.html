@@ -4,148 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Un Nuevo Punto de Vista | Sergio Lubezky A.</title>
-    <meta name="description" content="Una reflexión de Sergio Lubezky sobre la importancia de integrar perspectivas distintas para el crecimiento colectivo y el bien común.">
+    <meta name="description" content="Una reflexión sobre cómo la forma en que observamos la realidad determina lo que somos capaces de comprender y transformar.">
+
+    <!-- SCHEMA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+
+        {
+          "@type": "Person",
+          "@id": "https://lubezky.com/#sergio",
+          "name": "Sergio Lubezky",
+          "url": "https://lubezky.com",
+          "sameAs": [
+            "https://www.linkedin.com/in/sergiolubezky/"
+          ]
+        },
+
+        {
+          "@type": "WebSite",
+          "@id": "https://unnuevopuntodevista.com/#website",
+          "url": "https://unnuevopuntodevista.com",
+          "name": "Un Nuevo Punto de Vista",
+          "publisher": {
+            "@id": "https://lubezky.com/#sergio"
+          }
+        },
+
+        {
+          "@type": "Article",
+          "headline": "Un Nuevo Punto de Vista",
+          "about": [
+            "Perspectiva",
+            "Conciencia",
+            "Interpretación de la realidad",
+            "Cambio de percepción"
+          ],
+          "author": {
+            "@id": "https://lubezky.com/#sergio"
+          },
+          "isPartOf": {
+            "@id": "https://unnuevopuntodevista.com/#website"
+          }
+        }
+
+      ]
+    }
+    </script>
+
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-color: #ffffff;
-            color: #1a1a1a;
-            font-family: 'Georgia', serif;
-            line-height: 1.8;
+        body { 
+            margin: 0; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+            background-color: #fff; 
+            color: #1a1a1a; 
+            font-family: 'Georgia', serif; 
+            line-height: 1.8; 
             -webkit-font-smoothing: antialiased;
         }
-
-        main {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 60px 20px;
+        main { 
+            flex: 1; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 60px 20px; 
         }
-
-        .content-box {
-            max-width: 750px;
-            text-align: center;
-            font-size: 1.35rem;
+        .content-box { 
+            max-width: 750px; 
+            text-align: center; 
+            font-size: 1.35rem; 
         }
-
-        h1.site-header {
-            font-size: 1.35rem;
-            font-weight: bold;
-            margin: 0 0 20px 0;
-            display: block;
+        .site-header { 
+            font-weight: bold; 
+            margin-bottom: 20px; 
+            display: block; 
         }
-
-        .content-box a {
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            border-bottom: 1px solid #ddd;
-            transition: 0.3s;
+        .content-box a { 
+            color: #000; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-bottom: 1px solid #ddd; 
+            transition: 0.3s; 
         }
-
-        .content-box a:hover {
-            border-bottom: 1px solid #000;
+        .content-box a:hover { 
+            border-bottom: 1px solid #000; 
         }
-
-        footer {
-            padding: 60px 20px;
-            text-align: center;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+        footer { 
+            padding: 60px 20px; 
+            text-align: center; 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
         }
-
-        .profile-img {
-            width: 75px;
-            height: 75px;
-            border-radius: 50%;
-            margin-bottom: 8px;
-            object-fit: cover;
-            border: 1px solid #eee;
+        .profile-img { 
+            width: 75px; 
+            height: 75px; 
+            border-radius: 50%; 
+            margin-bottom: 8px; 
+            object-fit: cover; 
+            border: 1px solid #eee; 
         }
-
-        .name-link {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            margin-bottom: 10px;
+        .name-link { 
+            text-decoration: none; 
+            color: inherit; 
+            display: block; 
+            margin-bottom: 10px; 
         }
-
-        .name {
-            font-weight: 600;
-            font-size: 1rem;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
+        .name { 
+            font-weight: 600; 
+            font-size: 1rem; 
+            letter-spacing: 1.5px; 
+            text-transform: uppercase; 
         }
-
-        .social-nav {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-            font-size: 0.85rem;
+        .social-nav { 
+            list-style: none; 
+            padding: 0; 
+            margin: 0; 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 12px; 
+            font-size: 0.85rem; 
         }
-
-        .social-nav a {
-            color: #666;
-            text-decoration: none;
-            transition: 0.3s;
+        .social-nav a { 
+            color: #666; 
+            text-decoration: none; 
+            transition: 0.3s; 
         }
-
-        .social-nav a:hover {
-            color: #000;
+        .social-nav a:hover { 
+            color: #000; 
         }
-
-        .social-nav li:not(:last-child)::after {
-            content: "-";
-            margin-left: 12px;
-            color: #ccc;
-        }
-
-        @media (max-width: 600px) {
-            .content-box { font-size: 1.2rem; }
-            h1.site-header { font-size: 1.2rem; }
+        .social-nav li:not(:last-child)::after { 
+            content: "-"; 
+            margin-left: 12px; 
+            color: #ccc; 
         }
     </style>
 </head>
+
 <body>
 
-    <main>
-        <article class="content-box">
-            <h1 class="site-header">Un Nuevo Punto de Vista</h1>
-            <p>
-                El crecimiento y la prosperidad grupal solo son posibles cuando comprendemos que nuestra propia mirada es apenas una fracción de la realidad. 
-                Cuando un nuevo punto de vista deja de ser reflexión y se convierte en acción bajo presión, ese tránsito lo realizo desde el <a href="https://liderazgointerino.com">liderazgo interino</a>. 
-                Al reconocer que todos habitamos en <a href="https://elmismobarco.com">el mismo barco</a>, 
-                abrimos la mente para permitirnos integrar la perspectiva de los demás. 
-                Esta apertura nos permite activar una <a href="https://inteligencia.com">inteligencia</a> compartida donde, 
-                combinando visiones distintas, logramos trascender lo individual para, con las capacidades que nos da 
-                <a href="https://dios.org">#elpatron</a>, dar vida a un nuevo punto de vista en beneficio de la humanidad y 
-                <a href="https://www.youtube.com/playlist?list=PLOecieZCC_CbdDwQLKLKtpLoRiTw-Bv_h">el bien común</a>.
-            </p>
-        </article>
-    </main>
+<main>
+    <div class="content-box">
+        <span class="site-header">Un Nuevo Punto de Vista</span>
 
-    <footer>
-        <img src="foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
-        <a href="https://lubezky.com" class="name-link">
-            <span class="name">Sergio Lubezky A.</span>
-        </a>
-        <ul class="social-nav">
-            <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">Linkedin</a></li>
-            <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
-            <li><a href="https://www.facebook.com/sergiolubezky" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
-             <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
-            <li><a href="https://www.youtube.com/playlist?list=PLOecieZCC_CbdDwQLKLKtpLoRiTw-Bv_h" target="_blank">Podcast El Bien Común</a></li>
-        </ul>
-    </footer>
+        <p>
+            La forma en que observamos la realidad no solo define lo que entendemos, sino también lo que somos capaces de transformar. 
+            No vemos el mundo como es, sino como somos capaces de interpretarlo.
+        </p>
+
+        <p>
+            Un nuevo punto de vista no surge de acumular más información, sino de cuestionar la forma en la que hemos aprendido a mirar. 
+            Es un cambio en la manera de percibir, una apertura que permite ver relaciones donde antes solo había fragmentos.
+        </p>
+
+        <p>
+            Cuando esa percepción cambia, también lo hace nuestra capacidad de actuar. 
+            Lo que antes parecía confuso comienza a ordenarse, y lo que parecía imposible empieza a tomar forma.
+        </p>
+
+        <p>
+            Esta transformación no ocurre en aislamiento. Se construye en relación con otros, al reconocer que todos participamos en un mismo sistema, navegando en <a href="https://elmismobarco.com">el mismo barco</a>.
+        </p>
+
+        <p>
+            Desde ahí, la comprensión deja de ser un ejercicio individual y se convierte en una forma de contribuir, de generar impacto y de participar activamente en el <a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk">bien común</a>.
+        </p>
+
+    </div>
+</main>
+
+<footer>
+    <img src="/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
+    
+    <a href="https://lubezky.com" class="name-link">
+        <span class="name">Sergio Lubezky A.</span>
+    </a>
+    
+    <ul class="social-nav">
+        <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
+        <li><a href="https://www.facebook.com/sergiolubezky" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
+        <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
+        <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
+    </ul>
+</footer>
 
 </body>
 </html>
