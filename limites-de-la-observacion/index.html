@@ -4,46 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Límites de la observación | Sergio Lubezky A.</title>
-    <meta name="description" content="Una reflexión sobre los límites de lo que somos capaces de observar y cómo eso define nuestra comprensión de la realidad.">
+    <meta name="description" content="Una reflexión sobre los límites de lo que somos capaces de observar y cómo eso define nuestra comprensión de la realidad y nuestras decisiones.">
 
-    <!-- SCHEMA -->
     <script type="application/ld+json">
     {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://lubezky.com/#sergio",
-      "name": "Sergio Lubezky",
-      "url": "https://lubezky.com/"
-    },
-    {
-      "@type": "Article",
-      "@id": "https://unnuevopuntodevista.com/limites-de-la-observacion/#article",
-      "headline": "Límites de la observación: Lo que no vemos nos define",
-      "url": "https://unnuevopuntodevista.com/limites-de-la-observacion",
-      "author": { "@id": "https://lubezky.com/#sergio" },
-      "publisher": { "@id": "https://lubezky.com/#sergio" },
-      "description": "Exploración sobre los sesgos cognitivos, los marcos de referencia y cómo los límites de lo que observamos afectan nuestras decisiones.",
-      "about": [
-        { "@type": "Thing", "name": "Cognitive Bias" },
-        { "@type": "Thing", "name": "Visual Perception" }
-      ],
-      "mentions": [
+      "@context": "https://schema.org",
+      "@graph": [
         {
-          "@type": "Service",
-          "name": "Coaching Fotográfico",
-          "url": "https://coachdefoto.com/"
+          "@type": "Person",
+          "@id": "https://lubezky.com/#sergio",
+          "name": "Sergio Lubezky",
+          "url": "https://lubezky.com/",
+          "sameAs": [
+            "https://www.linkedin.com/in/sergiolubezky/",
+            "https://x.com/slubezky",
+            "https://inteligencia.com/",
+            "https://liderazgointerino.com/",
+            "https://coachdefoto.com/",
+            "https://elmismobarco.com/",
+            "https://unnuevopuntodevista.com/"
+          ],
+          "knowsAbout": ["Visual Perception", "Cognitive Bias", "Observational Strategy", "Strategic Thinking"]
         },
         {
-          "@type": "Service",
-          "name": "Dirección Interina",
-          "url": "https://liderazgointerino.com/"
+          "@type": "WebPage",
+          "@id": "https://unnuevopuntodevista.com/limites-de-la-observacion/#webpage",
+          "url": "https://unnuevopuntodevista.com/limites-de-la-observacion/",
+          "name": "Límites de la observación: Lo que no vemos nos define",
+          "isPartOf": { "@id": "https://unnuevopuntodevista.com/#website" },
+          "mainEntity": { "@id": "https://lubezky.com/#sergio" },
+          "description": "Exploración sobre los marcos de referencia y cómo los límites de lo que observamos afectan nuestras decisiones empresariales y personales."
         }
       ]
     }
-  ]
-}
     </script>
 
     <style>
@@ -63,7 +56,7 @@
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            padding: 60px 20px; 
+            padding: 80px 20px; 
         }
 
         .content-box { 
@@ -75,12 +68,12 @@
         h1 { 
             font-size: 1.5rem;
             font-weight: bold; 
-            margin-bottom: 16px; 
+            margin-bottom: 24px; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        p {
-            margin-bottom: 12px;
-        }
+        p { margin-bottom: 16px; }
 
         .content-box a { 
             color: #000; 
@@ -93,10 +86,12 @@
             border-bottom: 1px solid #000; 
         }
 
+        /* --- Estilos Footer Unificado (Sergio Lubezky Style) --- */
         footer { 
             padding: 60px 20px; 
             text-align: center; 
             font-family: 'Helvetica Neue', Arial, sans-serif; 
+            border-top: 1px solid #f5f5f5;
         }
 
         .profile-img { 
@@ -112,7 +107,7 @@
             text-decoration: none; 
             color: inherit; 
             display: block; 
-            margin-bottom: 10px; 
+            margin-bottom: 2px; /* Micro-ajuste Sergio */
         }
 
         .name { 
@@ -120,6 +115,29 @@
             font-size: 1rem; 
             letter-spacing: 1.5px; 
             text-transform: uppercase; 
+        }
+
+        .footer-bio {
+            max-width: 650px;
+            margin: 0 auto 30px auto; 
+            font-size: 0.95rem;
+            color: #444;
+            line-height: 1.7;
+        }
+
+        .footer-bio p { margin: 0; }
+
+        .footer-bio a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+
+        .footer-bio a:hover {
+            border-bottom: 1px solid #1a1a1a;
+            background-color: #f9f9f9;
         }
 
         .social-nav { 
@@ -133,15 +151,8 @@
             font-size: 0.85rem; 
         }
 
-        .social-nav a { 
-            color: #666; 
-            text-decoration: none; 
-        }
-
-        .social-nav a:hover { 
-            color: #000; 
-        }
-
+        .social-nav a { color: #666; text-decoration: none; }
+        .social-nav a:hover { color: #000; }
         .social-nav li:not(:last-child)::after { 
             content: "-"; 
             margin-left: 12px; 
@@ -153,46 +164,40 @@
 <body>
 
 <main>
-    <div class="content-box">
+    <article class="content-box">
         <h1>Límites de la observación</h1>
 
-        <p>
-            No vemos todo lo que está ahí.
-        </p>
+        <p>No vemos todo lo que está ahí.</p>
 
-        <p>
-            Nuestra capacidad de observar tiene límites. No porque la realidad sea incompleta, sino porque nuestra forma de percibirla lo es. Solo registramos aquello para lo que estamos preparados.
-        </p>
+        <p>Nuestra capacidad de observar tiene límites. No porque la realidad sea incompleta, sino porque nuestra forma de percibirla lo es. Solo registramos aquello para lo que estamos preparados.</p>
 
-        <p>
-            Lo que no reconocemos, simplemente no aparece. No es que esté oculto, es que queda fuera de nuestro campo de observación. Y al no verlo, tampoco lo consideramos en nuestras decisiones.
-        </p>
+        <p>Lo que no reconocemos, simplemente no aparece. No es que esté oculto, es que queda fuera de nuestro campo de observación. Y al no verlo, tampoco lo consideramos en nuestras decisiones.</p>
 
-        <p>
-            Esto no ocurre de manera evidente. Al contrario, lo que vemos suele sentirse completo. Pensamos que tenemos toda la información necesaria, cuando en realidad estamos operando dentro de un marco limitado.
-        </p>
+        <p>Esto no ocurre de manera evidente. Al contrario, lo que vemos suele sentirse completo. Pensamos que tenemos toda la información necesaria, cuando en realidad estamos operando dentro de un marco limitado.</p>
 
-        <p>
-            Esos límites no son fijos. Se expanden cuando aprendemos, cuando cuestionamos lo que damos por hecho, cuando incorporamos nuevas distinciones. Pero mientras no los reconozcamos, seguimos interpretando el mundo desde un espacio reducido.
-        </p>
+        <p>Ampliar la capacidad de observación no consiste en mirar más de lo mismo, sino en desarrollar la posibilidad de ver lo que antes no estaba disponible para nosotros.</p>
 
-        <p>
-            Por eso, ampliar la capacidad de observación no consiste en mirar más de lo mismo, sino en desarrollar la posibilidad de ver lo que antes no estaba disponible para nosotros.
-        </p>
-
-       <p>
-            En ese proceso, la realidad no cambia, pero sí cambia el mundo que somos capaces de percibir. Volver entonces a la relación entre <a href="/percepcion-y-realidad">la percepción y la realidad</a> permite reconocer con mayor claridad cómo esa transformación ocurre.
-        </p>
-
-    </div>
+        <p>En ese proceso, la realidad no cambia, pero sí cambia el mundo que somos capaces de percibir. Volver entonces a la relación entre <a href="/percepcion-y-realidad">la percepción y la realidad</a> permite reconocer con mayor claridad cómo esa transformación ocurre.</p>
+    </article>
 </main>
 
 <footer>
-    <img src="/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
+    <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
     
     <a href="https://lubezky.com" class="name-link">
         <span class="name">Sergio Lubezky A.</span>
     </a>
+
+    <div class="footer-bio">
+        <p>
+            Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
+            Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
+            la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a> en crisis 
+            y la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a>. 
+            Bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a> 
+            para entender que todos estamos en <a href="https://elmismobarco.com" target="_blank">el mismo barco</a>.
+        </p>
+    </div>
     
     <ul class="social-nav">
         <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
