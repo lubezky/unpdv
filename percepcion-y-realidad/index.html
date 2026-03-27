@@ -9,21 +9,34 @@
     <!-- SCHEMA -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://lubezky.com/#sergio",
-          "name": "Sergio Lubezky",
-          "url": "https://lubezky.com"
-        },
-        {
-          "@type": "WebPage",
-          "name": "Percepción y realidad",
-          "url": "https://unnuevopuntodevista.com/percepcion-y-realidad"
-        }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://lubezky.com/#sergio",
+      "name": "Sergio Lubezky",
+      "url": "https://lubezky.com/"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://unnuevopuntodevista.com/percepcion-y-realidad/#article",
+      "headline": "Percepción y realidad: El mapa no es el territorio",
+      "url": "https://unnuevopuntodevista.com/percepcion-y-realidad",
+      "author": { "@id": "https://lubezky.com/#sergio" },
+      "publisher": { "@id": "https://lubezky.com/#sergio" },
+      "description": "Un análisis sobre cómo la percepción moldea nuestra toma de decisiones y la construcción de la realidad en entornos corporativos y creativos.",
+      "about": [
+        { "@type": "Thing", "name": "Cognitive Science" },
+        { "@type": "Thing", "name": "Strategic Thinking" }
+      ],
+      "mentions": [
+        { "@type": "WebSite", "name": "Inteligencia Aplicada", "url": "https://inteligencia.com/" },
+        { "@type": "WebSite", "name": "Dirección Interina", "url": "https://liderazgointerino.com/" },
+        { "@type": "WebSite", "name": "Coach de Foto", "url": "https://coachdefoto.com/" }
       ]
     }
+  ]
+}
     </script>
 
     <style>
