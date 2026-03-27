@@ -4,46 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interpretación y significado | Sergio Lubezky A.</title>
-    <meta name="description" content="Una reflexión sobre cómo construimos el significado de lo que ocurre y cómo eso define nuestras decisiones.">
+    <meta name="description" content="Una reflexión sobre cómo construimos el significado de lo que ocurre y cómo eso define nuestras decisiones y nuestra realidad.">
 
-    <!-- SCHEMA -->
     <script type="application/ld+json">
     {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://lubezky.com/#sergio",
-      "name": "Sergio Lubezky",
-      "url": "https://lubezky.com/"
-    },
-    {
-      "@type": "Article",
-      "@id": "https://unnuevopuntodevista.com/interpretacion-y-significado/#article",
-      "headline": "Interpretación y significado: La base de nuestra percepción",
-      "url": "https://unnuevopuntodevista.com/interpretacion-y-significado",
-      "author": { "@id": "https://lubezky.com/#sergio" },
-      "publisher": { "@id": "https://lubezky.com/#sergio" },
-      "description": "Un análisis sobre cómo construimos el significado a partir de la interpretación de la realidad en los negocios y el arte.",
-      "about": [
-        { "@type": "Thing", "name": "Semiología" },
-        { "@type": "Thing", "name": "Estrategia Cognitiva" }
-      ],
-      "mentions": [
+      "@context": "https://schema.org",
+      "@graph": [
         {
-          "@type": "WebPage",
-          "name": "Inteligencia Artificial y Significado",
-          "url": "https://inteligencia.com/"
+          "@type": "Person",
+          "@id": "https://lubezky.com/#sergio",
+          "name": "Sergio Lubezky",
+          "url": "https://lubezky.com/",
+          "sameAs": [
+            "https://www.linkedin.com/in/sergiolubezky/",
+            "https://x.com/slubezky",
+            "https://inteligencia.com/",
+            "https://liderazgointerino.com/",
+            "https://coachdefoto.com/",
+            "https://elmismobarco.com/",
+            "https://unnuevopuntodevista.com/"
+          ],
+          "knowsAbout": ["Cognitive Strategy", "Perception", "Semiotics", "Strategic Thinking"]
         },
         {
           "@type": "WebPage",
-          "name": "La mirada del Coach de Foto",
-          "url": "https://coachdefoto.com/"
+          "@id": "https://unnuevopuntodevista.com/interpretacion-y-significado/#webpage",
+          "url": "https://unnuevopuntodevista.com/interpretacion-y-significado/",
+          "name": "Interpretación y significado: La base de nuestra percepción",
+          "isPartOf": { "@id": "https://unnuevopuntodevista.com/#website" },
+          "mainEntity": { "@id": "https://lubezky.com/#sergio" },
+          "description": "Un análisis sobre cómo construimos el significado a partir de la interpretación de la realidad."
         }
       ]
     }
-  ]
-}
     </script>
 
     <style>
@@ -63,7 +56,7 @@
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            padding: 60px 20px; 
+            padding: 80px 20px; 
         }
 
         .content-box { 
@@ -75,12 +68,12 @@
         h1 { 
             font-size: 1.5rem;
             font-weight: bold; 
-            margin-bottom: 16px; 
+            margin-bottom: 24px; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        p {
-            margin-bottom: 12px;
-        }
+        p { margin-bottom: 16px; }
 
         .content-box a { 
             color: #000; 
@@ -93,10 +86,12 @@
             border-bottom: 1px solid #000; 
         }
 
+        /* --- Estilos Footer Unificado (Sergio Lubezky Style) --- */
         footer { 
             padding: 60px 20px; 
             text-align: center; 
             font-family: 'Helvetica Neue', Arial, sans-serif; 
+            border-top: 1px solid #f5f5f5;
         }
 
         .profile-img { 
@@ -112,7 +107,7 @@
             text-decoration: none; 
             color: inherit; 
             display: block; 
-            margin-bottom: 10px; 
+            margin-bottom: 2px; /* El ajuste que nos gusta */
         }
 
         .name { 
@@ -120,6 +115,29 @@
             font-size: 1rem; 
             letter-spacing: 1.5px; 
             text-transform: uppercase; 
+        }
+
+        .footer-bio {
+            max-width: 650px;
+            margin: 0 auto 30px auto; 
+            font-size: 0.95rem;
+            color: #444;
+            line-height: 1.7;
+        }
+
+        .footer-bio p { margin: 0; }
+
+        .footer-bio a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+
+        .footer-bio a:hover {
+            border-bottom: 1px solid #1a1a1a;
+            background-color: #f9f9f9;
         }
 
         .social-nav { 
@@ -133,15 +151,8 @@
             font-size: 0.85rem; 
         }
 
-        .social-nav a { 
-            color: #666; 
-            text-decoration: none; 
-        }
-
-        .social-nav a:hover { 
-            color: #000; 
-        }
-
+        .social-nav a { color: #666; text-decoration: none; }
+        .social-nav a:hover { color: #000; }
         .social-nav li:not(:last-child)::after { 
             content: "-"; 
             margin-left: 12px; 
@@ -153,45 +164,40 @@
 <body>
 
 <main>
-    <div class="content-box">
+    <article class="content-box">
         <h1>Interpretación y significado</h1>
 
-        <p>
-            Lo que ocurre no tiene un significado único.
-        </p>
+        <p>Lo que ocurre no tiene un significado único.</p>
 
-        <p>
-            Los hechos existen, pero lo que esos hechos “quieren decir” no está contenido en ellos. El significado no viene dado por la realidad en sí misma, sino por la forma en que la interpretamos.
-        </p>
+        <p>Los hechos existen, pero lo que esos hechos “quieren decir” no está contenido en ellos. El significado no viene dado por la realidad en sí misma, sino por la forma en que la interpretamos.</p>
 
-        <p>
-            Esa interpretación ocurre casi de manera automática. No solemos cuestionarla porque se siente evidente, como si fuera una extensión natural de lo que está pasando. Pero en realidad es una construcción.
-        </p>
+        <p>Esa interpretación ocurre casi de manera automática. No solemos cuestionarla porque se siente evidente, como si fuera una extensión natural de lo que está pasando. Pero en realidad es una construcción.</p>
 
-        <p>
-            A partir de esa construcción tomamos decisiones, reaccionamos, evaluamos lo que es posible y lo que no. Es decir, no actuamos directamente sobre la realidad, sino sobre el significado que le atribuimos.
-        </p>
+        <p>No actuamos directamente sobre la realidad, sino sobre el significado que le atribuimos. A partir de esa construcción tomamos decisiones, reaccionamos y evaluamos lo que es posible.</p>
 
-        <p>
-            Cuando no distinguimos entre lo que ocurre y lo que interpretamos, quedamos atrapados en una sola forma de entender la situación. Eso limita nuestras respuestas y, muchas veces, nos lleva a repetir los mismos patrones.
-        </p>
+        <p>Cuando reconocemos que el significado es una interpretación, aparece un espacio. En ese espacio surge la posibilidad de mirar de otra manera, de cuestionar lo que parecía obvio y de construir nuevas formas de comprender.</p>
 
-        <p>
-            En cambio, cuando reconocemos que el significado es una interpretación, aparece un espacio. En ese espacio surge la posibilidad de mirar de otra manera, de cuestionar lo que parecía obvio y de construir nuevas formas de comprender lo que está ocurriendo.
-        </p>
-
-        <p>
-            Ese cambio no altera los hechos, pero sí transforma por completo la forma en que nos relacionamos con ellos. Sin embargo, incluso nuestra interpretación ocurre dentro de ciertos límites. No podemos comprender aquello que no somos capaces de observar, lo que abre una pregunta más profunda sobre <a href="/limites-de-la-observacion">los límites de la observación</a>.
-        </p>
-    </div>
+        <p>Sin embargo, incluso nuestra interpretación ocurre dentro de ciertos límites. No podemos comprender aquello que no somos capaces de observar, lo que abre una pregunta más profunda sobre <a href="/limites-de-la-observacion">los límites de la observación</a>.</p>
+    </article>
 </main>
 
 <footer>
-    <img src="/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
+    <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
     
     <a href="https://lubezky.com" class="name-link">
         <span class="name">Sergio Lubezky A.</span>
     </a>
+
+    <div class="footer-bio">
+        <p>
+            Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
+            Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
+            la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a> en crisis 
+            y la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a>. 
+            Bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a> 
+            para entender que todos estamos en <a href="https://elmismobarco.com" target="_blank">el mismo barco</a>.
+        </p>
+    </div>
     
     <ul class="social-nav">
         <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
