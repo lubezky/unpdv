@@ -9,21 +9,41 @@
     <!-- SCHEMA -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://lubezky.com/#sergio",
+      "name": "Sergio Lubezky",
+      "url": "https://lubezky.com/"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://unnuevopuntodevista.com/interpretacion-y-significado/#article",
+      "headline": "Interpretación y significado: La base de nuestra percepción",
+      "url": "https://unnuevopuntodevista.com/interpretacion-y-significado",
+      "author": { "@id": "https://lubezky.com/#sergio" },
+      "publisher": { "@id": "https://lubezky.com/#sergio" },
+      "description": "Un análisis sobre cómo construimos el significado a partir de la interpretación de la realidad en los negocios y el arte.",
+      "about": [
+        { "@type": "Thing", "name": "Semiología" },
+        { "@type": "Thing", "name": "Estrategia Cognitiva" }
+      ],
+      "mentions": [
         {
-          "@type": "Person",
-          "@id": "https://lubezky.com/#sergio",
-          "name": "Sergio Lubezky",
-          "url": "https://lubezky.com"
+          "@type": "WebPage",
+          "name": "Inteligencia Artificial y Significado",
+          "url": "https://inteligencia.com/"
         },
         {
           "@type": "WebPage",
-          "name": "Interpretación y significado",
-          "url": "https://unnuevopuntodevista.com/interpretacion-y-significado"
+          "name": "La mirada del Coach de Foto",
+          "url": "https://coachdefoto.com/"
         }
       ]
     }
+  ]
+}
     </script>
 
     <style>
