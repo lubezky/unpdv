@@ -9,21 +9,41 @@
     <!-- SCHEMA -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://lubezky.com/#sergio",
+      "name": "Sergio Lubezky",
+      "url": "https://lubezky.com/"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://unnuevopuntodevista.com/limites-de-la-observacion/#article",
+      "headline": "Límites de la observación: Lo que no vemos nos define",
+      "url": "https://unnuevopuntodevista.com/limites-de-la-observacion",
+      "author": { "@id": "https://lubezky.com/#sergio" },
+      "publisher": { "@id": "https://lubezky.com/#sergio" },
+      "description": "Exploración sobre los sesgos cognitivos, los marcos de referencia y cómo los límites de lo que observamos afectan nuestras decisiones.",
+      "about": [
+        { "@type": "Thing", "name": "Cognitive Bias" },
+        { "@type": "Thing", "name": "Visual Perception" }
+      ],
+      "mentions": [
         {
-          "@type": "Person",
-          "@id": "https://lubezky.com/#sergio",
-          "name": "Sergio Lubezky",
-          "url": "https://lubezky.com"
+          "@type": "Service",
+          "name": "Coaching Fotográfico",
+          "url": "https://coachdefoto.com/"
         },
         {
-          "@type": "WebPage",
-          "name": "Límites de la observación",
-          "url": "https://unnuevopuntodevista.com/limites-de-la-observacion"
+          "@type": "Service",
+          "name": "Dirección Interina",
+          "url": "https://liderazgointerino.com/"
         }
       ]
     }
+  ]
+}
     </script>
 
     <style>
