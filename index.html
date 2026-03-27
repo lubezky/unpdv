@@ -9,21 +9,29 @@
     <!-- SCHEMA -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://lubezky.com/#sergio",
-          "name": "Sergio Lubezky",
-          "url": "https://lubezky.com"
-        },
-        {
-          "@type": "WebSite",
-          "name": "Un nuevo punto de vista",
-          "url": "https://unnuevopuntodevista.com"
-        }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://lubezky.com/#sergio",
+      "name": "Sergio Lubezky",
+      "url": "https://lubezky.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/sergiolubezky/",
+        "https://lubezky.com/"
       ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://unnuevopuntodevista.com/#website",
+      "url": "https://unnuevopuntodevista.com/",
+      "name": "Un nuevo punto de vista",
+      "publisher": { "@id": "https://lubezky.com/#sergio" },
+      "author": { "@id": "https://lubezky.com/#sergio" },
+      "description": "Exploración filosófica y estratégica sobre la percepción, la interpretación y el significado en los negocios y la vida."
     }
+  ]
+}
     </script>
 
     <style>
