@@ -4,39 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Percepción y realidad | Sergio Lubezky A.</title>
-    <meta name="description" content="Una reflexión sobre la diferencia entre lo que ocurre y la forma en que lo interpretamos.">
+    <meta name="description" content="Una reflexión sobre la brecha entre los hechos objetivos y nuestra interpretación subjetiva. Cómo la percepción define nuestras posibilidades.">
 
-    <!-- SCHEMA -->
     <script type="application/ld+json">
     {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://lubezky.com/#sergio",
-      "name": "Sergio Lubezky",
-      "url": "https://lubezky.com/"
-    },
-    {
-      "@type": "Article",
-      "@id": "https://unnuevopuntodevista.com/percepcion-y-realidad/#article",
-      "headline": "Percepción y realidad: El mapa no es el territorio",
-      "url": "https://unnuevopuntodevista.com/percepcion-y-realidad",
-      "author": { "@id": "https://lubezky.com/#sergio" },
-      "publisher": { "@id": "https://lubezky.com/#sergio" },
-      "description": "Un análisis sobre cómo la percepción moldea nuestra toma de decisiones y la construcción de la realidad en entornos corporativos y creativos.",
-      "about": [
-        { "@type": "Thing", "name": "Cognitive Science" },
-        { "@type": "Thing", "name": "Strategic Thinking" }
-      ],
-      "mentions": [
-        { "@type": "WebSite", "name": "Inteligencia Aplicada", "url": "https://inteligencia.com/" },
-        { "@type": "WebSite", "name": "Dirección Interina", "url": "https://liderazgointerino.com/" },
-        { "@type": "WebSite", "name": "Coach de Foto", "url": "https://coachdefoto.com/" }
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://lubezky.com/#sergio",
+          "name": "Sergio Lubezky",
+          "url": "https://lubezky.com/",
+          "sameAs": [
+            "https://www.linkedin.com/in/sergiolubezky/",
+            "https://x.com/slubezky",
+            "https://inteligencia.com/",
+            "https://liderazgointerino.com/",
+            "https://coachdefoto.com/",
+            "https://elmismobarco.com/",
+            "https://unnuevopuntodevista.com/"
+          ],
+          "knowsAbout": ["Perception Theory", "Strategic Thinking", "Cognitive Science", "Change Management"]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://unnuevopuntodevista.com/percepcion-y-realidad/#webpage",
+          "url": "https://unnuevopuntodevista.com/percepcion-y-realidad/",
+          "name": "Percepción y realidad: El mapa no es el territorio",
+          "isPartOf": { "@id": "https://unnuevopuntodevista.com/#website" },
+          "mainEntity": { "@id": "https://lubezky.com/#sergio" },
+          "description": "Análisis sobre cómo la percepción moldea nuestra toma de decisiones y la construcción de la realidad."
+        }
       ]
     }
-  ]
-}
     </script>
 
     <style>
@@ -56,7 +56,7 @@
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            padding: 60px 20px; 
+            padding: 80px 20px; 
         }
 
         .content-box { 
@@ -68,12 +68,12 @@
         h1 { 
             font-size: 1.5rem;
             font-weight: bold; 
-            margin-bottom: 16px; 
+            margin-bottom: 24px; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        p {
-            margin-bottom: 12px;
-        }
+        p { margin-bottom: 16px; }
 
         .content-box a { 
             color: #000; 
@@ -86,10 +86,12 @@
             border-bottom: 1px solid #000; 
         }
 
+        /* --- Estilos Footer Unificado (Sergio Lubezky Style) --- */
         footer { 
             padding: 60px 20px; 
             text-align: center; 
             font-family: 'Helvetica Neue', Arial, sans-serif; 
+            border-top: 1px solid #f5f5f5;
         }
 
         .profile-img { 
@@ -105,7 +107,7 @@
             text-decoration: none; 
             color: inherit; 
             display: block; 
-            margin-bottom: 10px; 
+            margin-bottom: 2px; /* Micro-ajuste Sergio */
         }
 
         .name { 
@@ -113,6 +115,29 @@
             font-size: 1rem; 
             letter-spacing: 1.5px; 
             text-transform: uppercase; 
+        }
+
+        .footer-bio {
+            max-width: 650px;
+            margin: 0 auto 30px auto; 
+            font-size: 0.95rem; 
+            color: #444;
+            line-height: 1.7;
+        }
+
+        .footer-bio p { margin: 0; }
+
+        .footer-bio a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+
+        .footer-bio a:hover {
+            border-bottom: 1px solid #1a1a1a;
+            background-color: #f9f9f9;
         }
 
         .social-nav { 
@@ -126,15 +151,8 @@
             font-size: 0.85rem; 
         }
 
-        .social-nav a { 
-            color: #666; 
-            text-decoration: none; 
-        }
-
-        .social-nav a:hover { 
-            color: #000; 
-        }
-
+        .social-nav a { color: #666; text-decoration: none; }
+        .social-nav a:hover { color: #000; }
         .social-nav li:not(:last-child)::after { 
             content: "-"; 
             margin-left: 12px; 
@@ -146,56 +164,15 @@
 <body>
 
 <main>
-    <div class="content-box">
+    <article class="content-box">
         <h1>Percepción y realidad</h1>
 
-        <p>
-            No vemos la realidad como es, sino como la interpretamos.
-        </p>
+        <p>No vemos la realidad como es, sino como la interpretamos.</p>
 
-        <p>
-            Lo que ocurre tiene una dimensión objetiva: hechos, eventos, situaciones que existen independientemente de nosotros. Pero lo que entendemos de esos hechos no es inmediato ni neutral; pasa siempre por un filtro.
-        </p>
+        <p>Lo que ocurre tiene una dimensión objetiva: hechos y eventos que existen. Pero lo que entendemos de esos hechos nunca es neutral; pasa siempre por el filtro de nuestra historia y nuestras creencias.</p>
 
-        <p>
-            Ese filtro está formado por nuestra historia, nuestras creencias, nuestras experiencias y nuestras expectativas. No solo influye en lo que pensamos sobre lo que ocurre, sino también en lo que somos capaces de notar en primer lugar.
-        </p>
+        <p>Dos personas pueden observar exactamente la misma situación y llegar a conclusiones distintas. No necesariamente porque una esté equivocada, sino porque cada una observa desde un marco diferente.</p>
 
-        <p>
-            Por eso, dos personas pueden observar exactamente la misma situación y llegar a conclusiones completamente distintas. No necesariamente porque una esté equivocada, sino porque cada una está viendo desde un marco diferente.
-        </p>
+        <p>La dificultad comienza cuando confundimos nuestra percepción con la realidad misma. Al volver incuestionable nuestra interpretación, reducimos nuestra capacidad de comprender lo que realmente ocurre.</p>
 
-        <p>
-            La dificultad comienza cuando confundimos nuestra percepción con la realidad misma. Cuando lo que interpretamos se vuelve incuestionable, dejamos de ver alternativas y reducimos nuestra capacidad de comprender lo que realmente está ocurriendo.
-        </p>
-
-        <p>
-            Distinguir entre lo que sucede y la forma en que lo interpretamos no elimina la complejidad, pero abre un espacio. En ese espacio aparece la posibilidad de observar de otra manera, y con ello, de responder de forma distinta.
-        </p>
-
-        <p>
-            Esa diferencia, aunque parezca sutil, es la que permite que algo nuevo sea posible. A partir de ahí, se vuelve inevitable preguntarnos cómo construimos el significado de lo que vemos, algo que se despliega en <a href="/interpretacion-y-significado">la interpretación y el significado</a>.
-        </p>
-
-    </div>
-</main>
-
-<footer>
-    <img src="/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
-    
-    <a href="https://lubezky.com" class="name-link">
-        <span class="name">Sergio Lubezky A.</span>
-    </a>
-    
-    <ul class="social-nav">
-        <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
-        <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
-        <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
-        <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
-        <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
-    </ul>
-</footer>
-
-</body>
-</html>
+        <p>Distinguir entre lo que sucede y la forma en que lo interpretamos abre un espacio para responder de forma distinta
