@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Percepción y realidad | Sergio Lubezky A.</title>
+    <title>Percepción y realidad | Sergio Lubezky</title>
     <meta name="description" content="Una reflexión sobre la brecha entre los hechos objetivos y nuestra interpretación subjetiva. Cómo la percepción define nuestras posibilidades.">
+    <meta name="author" content="Sergio Lubezky">
+
+    <link rel="canonical" href="https://unnuevopuntodevista.com/percepcion-y-realidad/">
+
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Percepción y realidad | Sergio Lubezky" />
+    <meta property="og:description" content="No vemos la realidad como es, sino como la interpretamos. El mapa no es el territorio." />
+    <meta property="og:url" content="https://unnuevopuntodevista.com/percepcion-y-realidad/" />
+    <meta property="og:site_name" content="Un Nuevo Punto de Vista" />
+    <meta property="og:image" content="https://lubezky.com/foto-sergio.jpg" />
 
     <script type="application/ld+json">
     {
@@ -17,23 +28,20 @@
           "url": "https://lubezky.com/",
           "sameAs": [
             "https://www.linkedin.com/in/sergiolubezky/",
-            "https://x.com/slubezky",
-            "https://inteligencia.com/",
+            "https://unnuevopuntodevista.com/",
             "https://liderazgointerino.com/",
-            "https://coachdefoto.com/",
-            "https://elmismobarco.com/",
-            "https://unnuevopuntodevista.com/"
-          ],
-          "knowsAbout": ["Perception Theory", "Strategic Thinking", "Cognitive Science", "Change Management"]
+            "https://inteligencia.com/"
+          ]
         },
         {
           "@type": "WebPage",
           "@id": "https://unnuevopuntodevista.com/percepcion-y-realidad/#webpage",
           "url": "https://unnuevopuntodevista.com/percepcion-y-realidad/",
-          "name": "Percepción y realidad: El mapa no es el territorio",
+          "name": "Percepción y realidad | Un Nuevo Punto de Vista",
           "isPartOf": { "@id": "https://unnuevopuntodevista.com/#website" },
           "mainEntity": { "@id": "https://lubezky.com/#sergio" },
-          "description": "Análisis sobre cómo la percepción moldea nuestra toma de decisiones y la construcción de la realidad."
+          "author": { "@id": "https://lubezky.com/#sergio" },
+          "description": "Exploración sobre la brecha entre hechos y significados en la toma de decisiones."
         }
       ]
     }
@@ -49,6 +57,7 @@
             color: #1a1a1a; 
             font-family: 'Georgia', serif; 
             line-height: 1.8; 
+            -webkit-font-smoothing: antialiased;
         }
 
         main { 
@@ -70,7 +79,7 @@
             font-weight: bold; 
             margin-bottom: 24px; 
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
 
         p { margin-bottom: 16px; }
@@ -80,84 +89,41 @@
             text-decoration: none; 
             font-weight: bold; 
             border-bottom: 1px solid #ddd; 
+            transition: border-color 0.3s;
         }
 
-        .content-box a:hover { 
-            border-bottom: 1px solid #000; 
-        }
+        .content-box a:hover { border-bottom: 1px solid #000; }
 
-        /* --- Estilos Footer Unificado (Sergio Lubezky Style) --- */
         footer { 
             padding: 60px 20px; 
             text-align: center; 
             font-family: 'Helvetica Neue', Arial, sans-serif; 
-            border-top: 1px solid #f5f5f5;
+            border-top: 1px solid #f2f2f2;
         }
 
         .profile-img { 
-            width: 75px; 
-            height: 75px; 
-            border-radius: 50%; 
-            margin-bottom: 10px; 
-            object-fit: cover; 
-            border: 1px solid #eee; 
+            width: 75px; height: 75px; 
+            border-radius: 50%; margin-bottom: 10px; 
+            object-fit: cover; border: 1px solid #eee; 
         }
 
-        .name-link { 
-            text-decoration: none; 
-            color: inherit; 
-            display: block; 
-            margin-bottom: 2px; /* Micro-ajuste Sergio */
-        }
-
-        .name { 
-            font-weight: 600; 
-            font-size: 1rem; 
-            letter-spacing: 1.5px; 
-            text-transform: uppercase; 
-        }
+        .name-link { text-decoration: none; color: inherit; display: block; margin-bottom: 2px; }
+        .name { font-weight: 600; font-size: 1rem; letter-spacing: 1.5px; text-transform: uppercase; }
 
         .footer-bio {
-            max-width: 650px;
-            margin: 0 auto 30px auto; 
-            font-size: 0.95rem; 
-            color: #444;
-            line-height: 1.7;
-        }
-
-        .footer-bio p { margin: 0; }
-
-        .footer-bio a {
-            color: #1a1a1a;
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 1px solid #eee;
-            transition: all 0.3s ease;
-        }
-
-        .footer-bio a:hover {
-            border-bottom: 1px solid #1a1a1a;
-            background-color: #f9f9f9;
+            max-width: 650px; margin: 0 auto 30px auto; 
+            font-size: 0.95rem; color: #444; line-height: 1.7;
         }
 
         .social-nav { 
-            list-style: none; 
-            padding: 0; 
-            margin: 0; 
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            gap: 12px; 
-            font-size: 0.85rem; 
+            list-style: none; padding: 0; margin: 0; 
+            display: flex; flex-wrap: wrap; justify-content: center; 
+            gap: 12px; font-size: 0.85rem; 
         }
 
         .social-nav a { color: #666; text-decoration: none; }
         .social-nav a:hover { color: #000; }
-        .social-nav li:not(:last-child)::after { 
-            content: "-"; 
-            margin-left: 12px; 
-            color: #ccc; 
-        }
+        .social-nav li:not(:last-child)::after { content: "-"; margin-left: 12px; color: #ccc; }
     </style>
 </head>
 
@@ -175,4 +141,34 @@
 
         <p>La dificultad comienza cuando confundimos nuestra percepción con la realidad misma. Al volver incuestionable nuestra interpretación, reducimos nuestra capacidad de comprender lo que realmente ocurre.</p>
 
-        <p>Distinguir entre lo que sucede y la forma en que lo interpretamos abre un espacio para responder de forma distinta
+        <p>Distinguir entre lo que sucede y la forma en que lo interpretamos abre un espacio para responder de forma distinta frente a los retos, permitiéndonos actuar con mayor libertad y precisión estratégica.</p>
+    </article>
+</main>
+
+<footer>
+    <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
+    <a href="https://lubezky.com" class="name-link">
+        <span class="name">Sergio Lubezky A.</span>
+    </a>
+    <div class="footer-bio">
+        <p>
+            Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
+            Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
+            la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a> 
+            y la narrativa visual bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a> 
+            para entender que todos estamos en <a href="https://elmismobarco.com" target="_blank">el mismo barco</a>.
+        </p>
+    </div>
+    <ul class="social-nav">
+        <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
+        <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
+        <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
+        <li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
+        <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
