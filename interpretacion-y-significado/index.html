@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interpretación y significado | Sergio Lubezky A.</title>
+    <title>Interpretación y significado | Sergio Lubezky</title>
     <meta name="description" content="Una reflexión sobre cómo construimos el significado de lo que ocurre y cómo eso define nuestras decisiones y nuestra realidad.">
+    <meta name="author" content="Sergio Lubezky">
+
+    <link rel="canonical" href="https://unnuevopuntodevista.com/interpretacion-y-significado/">
+
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Interpretación y significado | Sergio Lubezky" />
+    <meta property="og:description" content="Lo que ocurre no tiene un significado único. Una exploración sobre cómo construimos nuestra realidad." />
+    <meta property="og:url" content="https://unnuevopuntodevista.com/interpretacion-y-significado/" />
+    <meta property="og:site_name" content="Un Nuevo Punto de Vista" />
+    <meta property="og:image" content="https://lubezky.com/foto-sergio.jpg" />
 
     <script type="application/ld+json">
     {
@@ -17,29 +28,27 @@
           "url": "https://lubezky.com/",
           "sameAs": [
             "https://www.linkedin.com/in/sergiolubezky/",
-            "https://x.com/slubezky",
-            "https://inteligencia.com/",
+            "https://unnuevopuntodevista.com/",
             "https://liderazgointerino.com/",
-            "https://coachdefoto.com/",
-            "https://elmismobarco.com/",
-            "https://unnuevopuntodevista.com/"
-          ],
-          "knowsAbout": ["Cognitive Strategy", "Perception", "Semiotics", "Strategic Thinking"]
+            "https://inteligencia.com/"
+          ]
         },
         {
           "@type": "WebPage",
           "@id": "https://unnuevopuntodevista.com/interpretacion-y-significado/#webpage",
           "url": "https://unnuevopuntodevista.com/interpretacion-y-significado/",
-          "name": "Interpretación y significado: La base de nuestra percepción",
+          "name": "Interpretación y significado | Un Nuevo Punto de Vista",
           "isPartOf": { "@id": "https://unnuevopuntodevista.com/#website" },
           "mainEntity": { "@id": "https://lubezky.com/#sergio" },
-          "description": "Un análisis sobre cómo construimos el significado a partir de la interpretación de la realidad."
+          "author": { "@id": "https://lubezky.com/#sergio" },
+          "description": "Análisis sobre la construcción semántica de la realidad y la percepción estratégica."
         }
       ]
     }
     </script>
 
     <style>
+        /* --- ESTÉTICA LUBEZKY --- */
         body { 
             margin: 0; 
             display: flex; 
@@ -49,6 +58,7 @@
             color: #1a1a1a; 
             font-family: 'Georgia', serif; 
             line-height: 1.8; 
+            -webkit-font-smoothing: antialiased;
         }
 
         main { 
@@ -70,7 +80,7 @@
             font-weight: bold; 
             margin-bottom: 24px; 
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
 
         p { margin-bottom: 16px; }
@@ -80,83 +90,55 @@
             text-decoration: none; 
             font-weight: bold; 
             border-bottom: 1px solid #ddd; 
+            transition: border-color 0.3s;
         }
 
         .content-box a:hover { 
             border-bottom: 1px solid #000; 
         }
 
-        /* --- Estilos Footer Unificado (Sergio Lubezky Style) --- */
+        /* --- FOOTER UNIFICADO --- */
         footer { 
             padding: 60px 20px; 
             text-align: center; 
             font-family: 'Helvetica Neue', Arial, sans-serif; 
-            border-top: 1px solid #f5f5f5;
+            border-top: 1px solid #f2f2f2;
         }
 
         .profile-img { 
-            width: 75px; 
-            height: 75px; 
-            border-radius: 50%; 
-            margin-bottom: 10px; 
-            object-fit: cover; 
-            border: 1px solid #eee; 
+            width: 75px; height: 75px; 
+            border-radius: 50%; margin-bottom: 10px; 
+            object-fit: cover; border: 1px solid #eee; 
         }
 
-        .name-link { 
-            text-decoration: none; 
-            color: inherit; 
-            display: block; 
-            margin-bottom: 2px; /* El ajuste que nos gusta */
-        }
-
-        .name { 
-            font-weight: 600; 
-            font-size: 1rem; 
-            letter-spacing: 1.5px; 
-            text-transform: uppercase; 
-        }
+        .name-link { text-decoration: none; color: inherit; display: block; margin-bottom: 2px; }
+        .name { font-weight: 600; font-size: 1rem; letter-spacing: 1.5px; text-transform: uppercase; }
 
         .footer-bio {
-            max-width: 650px;
-            margin: 0 auto 30px auto; 
-            font-size: 0.95rem;
-            color: #444;
-            line-height: 1.7;
+            max-width: 650px; margin: 0 auto 30px auto; 
+            font-size: 0.95rem; color: #444; line-height: 1.7;
         }
 
         .footer-bio p { margin: 0; }
 
         .footer-bio a {
-            color: #1a1a1a;
-            text-decoration: none;
-            font-weight: 600;
+            color: #1a1a1a; text-decoration: none; font-weight: 600;
             border-bottom: 1px solid #eee;
             transition: all 0.3s ease;
         }
 
-        .footer-bio a:hover {
-            border-bottom: 1px solid #1a1a1a;
-            background-color: #f9f9f9;
-        }
+        .footer-bio a:hover { border-bottom: 1px solid #1a1a1a; }
 
         .social-nav { 
-            list-style: none; 
-            padding: 0; 
-            margin: 0; 
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            gap: 12px; 
-            font-size: 0.85rem; 
+            list-style: none; padding: 0; margin: 0; 
+            display: flex; flex-wrap: wrap; justify-content: center; 
+            gap: 12px; font-size: 0.85rem; 
         }
 
         .social-nav a { color: #666; text-decoration: none; }
         .social-nav a:hover { color: #000; }
         .social-nav li:not(:last-child)::after { 
-            content: "-"; 
-            margin-left: 12px; 
-            color: #ccc; 
+            content: "-"; margin-left: 12px; color: #ccc; 
         }
     </style>
 </head>
@@ -177,7 +159,7 @@
 
         <p>Cuando reconocemos que el significado es una interpretación, aparece un espacio. En ese espacio surge la posibilidad de mirar de otra manera, de cuestionar lo que parecía obvio y de construir nuevas formas de comprender.</p>
 
-        <p>Sin embargo, incluso nuestra interpretación ocurre dentro de ciertos límites. No podemos comprender aquello que no somos capaces de observar, lo que abre una pregunta más profunda sobre <a href="/limites-de-la-observacion">los límites de la observación</a>.</p>
+        <p>Sin embargo, incluso nuestra interpretación ocurre dentro de ciertos límites. No podemos comprender aquello que no somos capaces de observar, lo que abre una pregunta más profunda sobre <a href="/limites-de-la-observacion/">los límites de la observación</a>.</p>
     </article>
 </main>
 
@@ -192,9 +174,10 @@
         <p>
             Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
             Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
-            la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a> en crisis 
-            y la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a>. 
-            Bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a> 
+            la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
+            la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
+            y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
+            bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
             para entender que todos estamos en <a href="https://elmismobarco.com" target="_blank">el mismo barco</a>.
         </p>
     </div>
@@ -205,6 +188,7 @@
         <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
         <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
         <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
+        <li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
         <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
     </ul>
 </footer>
