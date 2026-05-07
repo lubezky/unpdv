@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Un Nuevo Punto de Vista | Sergio Lubezky A.</title>
-    <meta name="description" content="Una reflexión sobre cómo cambiar la forma en que observamos la realidad permite descubrir nuevas soluciones.">
+    <title>Un nuevo punto de vista | Cambiar la mirada para cambiar la acción</title>
+    <meta name="description" content="La forma en la que vemos el mundo determina las decisiones que tomamos. Una exploración sobre la percepción estratégica por Sergio Lubezky.">
+    <meta name="author" content="Sergio Lubezky">
+
+    <link rel="canonical" href="https://unnuevopuntodevista.com/">
+
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Un nuevo punto de vista | Percepción y Estrategia" />
+    <meta property="og:description" content="No vemos las cosas como son, las vemos como somos. Cambiar la mirada es el primer paso para una mejor ejecución." />
+    <meta property="og:url" content="https://unnuevopuntodevista.com/" />
+    <meta property="og:site_name" content="Un Nuevo Punto de Vista" />
+    <meta property="og:image" content="https://lubezky.com/foto-sergio.jpg" />
 
     <script type="application/ld+json">
     {
@@ -17,12 +28,11 @@
           "url": "https://lubezky.com/",
           "sameAs": [
             "https://lubezky.com/",
-            "https://elmismobarco.com/",
-            "https://inteligencia.com/",
             "https://unnuevopuntodevista.com/",
+            "https://inteligencia.com/",
             "https://liderazgointerino.com/",
-            "https://coachdefoto.com/",
-            "https://musica.sergiolubezky.com/"
+            "https://elmismobarco.com/",
+            "https://coachdefoto.com/"
           ]
         },
         {
@@ -32,15 +42,7 @@
           "name": "Un Nuevo Punto de Vista",
           "publisher": { "@id": "https://lubezky.com/#sergio" },
           "about": { "@id": "https://lubezky.com/#sergio" },
-          "inLanguage": "es"
-        },
-        {
-          "@type": "Article",
-          "@id": "https://unnuevopuntodevista.com/#article",
-          "headline": "Un nuevo punto de vista",
-          "author": { "@id": "https://lubezky.com/#sergio" },
-          "isPartOf": { "@id": "https://unnuevopuntodevista.com/#website" },
-          "inLanguage": "es"
+          "description": "Perspectivas sobre cómo la percepción moldea la toma de decisiones y el liderazgo."
         }
       ]
     }
@@ -56,6 +58,7 @@
             color: #1a1a1a; 
             font-family: 'Georgia', serif; 
             line-height: 1.8; 
+            -webkit-font-smoothing: antialiased;
         }
 
         main { 
@@ -63,7 +66,7 @@
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            padding: 80px 20px; 
+            padding: 60px 20px; 
         }
 
         .content-box { 
@@ -75,94 +78,66 @@
         h1 { 
             font-size: 1.5rem;
             font-weight: bold; 
-            margin-bottom: 24px; 
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            margin-bottom: 16px; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
         }
 
-        p { margin-bottom: 16px; }
+        p { margin-bottom: 14px; }
 
         .content-box a { 
             color: #000; 
             text-decoration: none; 
             font-weight: bold; 
             border-bottom: 1px solid #ddd; 
+            transition: border-color 0.3s;
         }
 
         .content-box a:hover { 
             border-bottom: 1px solid #000; 
         }
 
+        /* FOOTER STANDARDIZADO */
         footer { 
             padding: 60px 20px; 
             text-align: center; 
             font-family: 'Helvetica Neue', Arial, sans-serif; 
+            border-top: 1px solid #f2f2f2;
         }
 
+        .profile-img { 
+            width: 75px; height: 75px; 
+            border-radius: 50%; margin-bottom: 10px; 
+            object-fit: cover; border: 1px solid #eee; 
+        }
+
+        .name-link { text-decoration: none; color: inherit; display: block; margin-bottom: 2px; }
+        .name { font-weight: 600; font-size: 1rem; letter-spacing: 1.5px; text-transform: uppercase; }
+
         .footer-bio {
-            max-width: 650px;
-            margin: 0 auto 30px auto; 
-            font-size: 0.95rem;
-            color: #444;
-            line-height: 1.7;
+            max-width: 650px; margin: 0 auto 30px auto; 
+            font-size: 0.95rem; color: #444; line-height: 1.7;
         }
 
         .footer-bio p { margin: 0; }
 
         .footer-bio a {
-            color: #1a1a1a;
-            text-decoration: none;
-            font-weight: 600;
+            color: #1a1a1a; text-decoration: none; font-weight: 600;
             border-bottom: 1px solid #eee;
-            transition: all 0.3s ease;
         }
 
-        .footer-bio a:hover {
-            border-bottom: 1px solid #1a1a1a;
-            background-color: #f9f9f9;
-            color: #000;
-        }
+        .footer-bio a:hover { border-bottom: 1px solid #1a1a1a; }
 
         .social-nav { 
-            list-style: none; 
-            padding: 0; 
-            margin: 0; 
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            gap: 12px; 
-            font-size: 0.85rem; 
+            list-style: none; padding: 0; margin: 0; 
+            display: flex; flex-wrap: wrap; justify-content: center; 
+            gap: 12px; font-size: 0.85rem; 
         }
 
         .social-nav a { color: #666; text-decoration: none; }
         .social-nav a:hover { color: #000; }
         .social-nav li:not(:last-child)::after { 
-            content: "-"; 
-            margin-left: 12px; 
-            color: #ccc; 
-        }
-
-        .profile-img { 
-            width: 75px; 
-            height: 75px; 
-            border-radius: 50%; 
-            margin-bottom: 10px; 
-            object-fit: cover; 
-            border: 1px solid #eee; 
-        }
-
-        .name-link { 
-            text-decoration: none; 
-            color: inherit; 
-            display: block; 
-            margin-bottom: 2px; 
-        }
-
-        .name { 
-            font-weight: 600; 
-            font-size: 1rem; 
-            letter-spacing: 1.5px; 
-            text-transform: uppercase; 
+            content: "-"; margin-left: 12px; color: #ccc; 
         }
     </style>
 </head>
@@ -174,31 +149,23 @@
         <h1>Un nuevo punto de vista</h1>
 
         <p>
-            No vemos la realidad como es, sino como somos capaces de verla. Lo que consideramos evidente no surge únicamente de lo que ocurre, sino de la forma en que lo interpretamos. Nuestra historia y nuestras experiencias determinan aquello que podemos reconocer… y aquello que permanece invisible.
+            No vemos las cosas como son, las vemos como somos. Esta idea, aunque simple, tiene implicaciones profundas en la forma en la que tomamos decisiones, resolvemos problemas y nos relacionamos con los demás. Nuestra mirada no es un espejo de la realidad, sino un filtro construido por nuestra experiencia, nuestras creencias y nuestros miedos.
         </p>
 
         <p>
-            Por eso, muchos problemas que parecen no tener solución no están realmente bloqueados, sino limitados por la forma en que los estamos observando. Cuando intentamos resolver algo desde el mismo marco en el que fue planteado, repetimos las mismas posibilidades y obtenemos los mismos resultados.
+            A menudo, cuando nos sentimos atrapados o cuando una situación parece no tener salida, el problema no está en la situación misma, sino en la rigidez de nuestra perspectiva. Nos convencemos de que solo hay una forma de entender lo que ocurre y, por lo tanto, solo una forma de actuar.
         </p>
 
         <p>
-            Pensar fuera de ese marco —lo que comúnmente se describe como <em>outside the box</em>— no es simplemente una invitación a ser creativo, sino una necesidad para poder acceder a nuevas soluciones. Un cambio de perspectiva no altera los hechos, pero sí transforma lo que esos hechos significan y lo que somos capaces de hacer con ellos.
+            Desarrollar un nuevo punto de vista no consiste en ignorar la realidad o en adoptar un optimismo ingenuo. Se trata de ampliar el encuadre. Se trata de aprender a observar los puntos ciegos, de cuestionar nuestras certezas más arraigadas y de permitirnos ver matices donde antes solo veíamos blanco o negro.
         </p>
 
         <p>
-            En ese cambio ocurre algo importante: lo que antes parecía un problema cerrado comienza a abrirse. Aparecen alternativas que no estaban disponibles, no porque no existieran, sino porque no podían ser vistas desde la perspectiva anterior.
+            Cuando la mirada se flexibiliza, las opciones de acción se multiplican. Lo que antes parecía un obstáculo insalvable puede empezar a verse como una transición necesaria, y lo que se sentía como una crisis puede revelarse como el espacio donde se gesta una nueva <a href="https://inteligencia.com">inteligencia</a> operativa.
         </p>
 
         <p>
-            Esta forma de observar se desarrolla en la práctica. En espacios como <a href="https://coachdefoto.com">coach de foto</a>, la imagen se convierte en una herramienta para entrenar la mirada y entender que ver no es lo mismo que observar.
-        </p>
-
-        <p>
-            Este cambio de percepción es el puente entre entender y actuar. Lo que se explora en <a href="https://inteligencia.com">inteligencia</a> adquiere una nueva dimensión cuando se observa desde otro ángulo, y es desde ahí que se vuelve posible intervenir con claridad a través del <a href="https://liderazgointerino.com">liderazgo interino</a>.
-        </p>
-
-        <p>
-            Todo esto forma parte de una visión más amplia sobre cómo entendemos y actuamos frente a la realidad, que puedes explorar en <a href="https://lubezky.com">lubezky.com</a>.
+            Cambiar la forma de ver es, en última instancia, el primer paso para cambiar la forma de actuar.
         </p>
     </div>
 </main>
@@ -211,27 +178,20 @@
     </a>
 
     <div class="footer-bio">
-    <p>
-        Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
-        Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
-        la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
-        la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
-        y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
-        bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
-        para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
-    </p>
-</div>
+        <p>
+            Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
+            Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
+            la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
+            la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
+            y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
+            bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
+            para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
+        </p>
+    </div>
     
     <ul class="social-nav">
         <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
         <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
         <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
         <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
-        <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
-        <li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
-        <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
-    </ul>
-</footer>
-
-</body>
-</html>
+        <li><a href="http
