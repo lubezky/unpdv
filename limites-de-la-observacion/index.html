@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Límites de la observación | Sergio Lubezky A.</title>
+    <title>Límites de la observación | Sergio Lubezky</title>
     <meta name="description" content="Una reflexión sobre los límites de lo que somos capaces de observar y cómo eso define nuestra comprensión de la realidad y nuestras decisiones.">
+    <meta name="author" content="Sergio Lubezky">
+
+    <link rel="canonical" href="https://unnuevopuntodevista.com/limites-de-la-observacion/">
+
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Límites de la observación | Sergio Lubezky" />
+    <meta property="og:description" content="No vemos todo lo que está ahí. Solo registramos aquello para lo que estamos preparados." />
+    <meta property="og:url" content="https://unnuevopuntodevista.com/limites-de-la-observacion/" />
+    <meta property="og:site_name" content="Un Nuevo Punto de Vista" />
+    <meta property="og:image" content="https://lubezky.com/foto-sergio.jpg" />
 
     <script type="application/ld+json">
     {
@@ -17,29 +28,27 @@
           "url": "https://lubezky.com/",
           "sameAs": [
             "https://www.linkedin.com/in/sergiolubezky/",
-            "https://x.com/slubezky",
-            "https://inteligencia.com/",
+            "https://unnuevopuntodevista.com/",
             "https://liderazgointerino.com/",
-            "https://coachdefoto.com/",
-            "https://elmismobarco.com/",
-            "https://unnuevopuntodevista.com/"
-          ],
-          "knowsAbout": ["Visual Perception", "Cognitive Bias", "Observational Strategy", "Strategic Thinking"]
+            "https://inteligencia.com/"
+          ]
         },
         {
           "@type": "WebPage",
           "@id": "https://unnuevopuntodevista.com/limites-de-la-observacion/#webpage",
           "url": "https://unnuevopuntodevista.com/limites-de-la-observacion/",
-          "name": "Límites de la observación: Lo que no vemos nos define",
+          "name": "Límites de la observación | Un Nuevo Punto de Vista",
           "isPartOf": { "@id": "https://unnuevopuntodevista.com/#website" },
           "mainEntity": { "@id": "https://lubezky.com/#sergio" },
-          "description": "Exploración sobre los marcos de referencia y cómo los límites de lo que observamos afectan nuestras decisiones empresariales y personales."
+          "author": { "@id": "https://lubezky.com/#sergio" },
+          "description": "Exploración sobre los marcos de referencia y la capacidad de percepción organizacional."
         }
       ]
     }
     </script>
 
     <style>
+        /* --- ESTÉTICA LUBEZKY --- */
         body { 
             margin: 0; 
             display: flex; 
@@ -49,6 +58,7 @@
             color: #1a1a1a; 
             font-family: 'Georgia', serif; 
             line-height: 1.8; 
+            -webkit-font-smoothing: antialiased;
         }
 
         main { 
@@ -70,7 +80,7 @@
             font-weight: bold; 
             margin-bottom: 24px; 
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
 
         p { margin-bottom: 16px; }
@@ -80,83 +90,55 @@
             text-decoration: none; 
             font-weight: bold; 
             border-bottom: 1px solid #ddd; 
+            transition: border-color 0.3s;
         }
 
         .content-box a:hover { 
             border-bottom: 1px solid #000; 
         }
 
-        /* --- Estilos Footer Unificado (Sergio Lubezky Style) --- */
+        /* --- FOOTER UNIFICADO --- */
         footer { 
             padding: 60px 20px; 
             text-align: center; 
             font-family: 'Helvetica Neue', Arial, sans-serif; 
-            border-top: 1px solid #f5f5f5;
+            border-top: 1px solid #f2f2f2;
         }
 
         .profile-img { 
-            width: 75px; 
-            height: 75px; 
-            border-radius: 50%; 
-            margin-bottom: 10px; 
-            object-fit: cover; 
-            border: 1px solid #eee; 
+            width: 75px; height: 75px; 
+            border-radius: 50%; margin-bottom: 10px; 
+            object-fit: cover; border: 1px solid #eee; 
         }
 
-        .name-link { 
-            text-decoration: none; 
-            color: inherit; 
-            display: block; 
-            margin-bottom: 2px; /* Micro-ajuste Sergio */
-        }
-
-        .name { 
-            font-weight: 600; 
-            font-size: 1rem; 
-            letter-spacing: 1.5px; 
-            text-transform: uppercase; 
-        }
+        .name-link { text-decoration: none; color: inherit; display: block; margin-bottom: 2px; }
+        .name { font-weight: 600; font-size: 1rem; letter-spacing: 1.5px; text-transform: uppercase; }
 
         .footer-bio {
-            max-width: 650px;
-            margin: 0 auto 30px auto; 
-            font-size: 0.95rem;
-            color: #444;
-            line-height: 1.7;
+            max-width: 650px; margin: 0 auto 30px auto; 
+            font-size: 0.95rem; color: #444; line-height: 1.7;
         }
 
         .footer-bio p { margin: 0; }
 
         .footer-bio a {
-            color: #1a1a1a;
-            text-decoration: none;
-            font-weight: 600;
+            color: #1a1a1a; text-decoration: none; font-weight: 600;
             border-bottom: 1px solid #eee;
             transition: all 0.3s ease;
         }
 
-        .footer-bio a:hover {
-            border-bottom: 1px solid #1a1a1a;
-            background-color: #f9f9f9;
-        }
+        .footer-bio a:hover { border-bottom: 1px solid #1a1a1a; }
 
         .social-nav { 
-            list-style: none; 
-            padding: 0; 
-            margin: 0; 
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            gap: 12px; 
-            font-size: 0.85rem; 
+            list-style: none; padding: 0; margin: 0; 
+            display: flex; flex-wrap: wrap; justify-content: center; 
+            gap: 12px; font-size: 0.85rem; 
         }
 
         .social-nav a { color: #666; text-decoration: none; }
         .social-nav a:hover { color: #000; }
         .social-nav li:not(:last-child)::after { 
-            content: "-"; 
-            margin-left: 12px; 
-            color: #ccc; 
+            content: "-"; margin-left: 12px; color: #ccc; 
         }
     </style>
 </head>
@@ -177,7 +159,7 @@
 
         <p>Ampliar la capacidad de observación no consiste en mirar más de lo mismo, sino en desarrollar la posibilidad de ver lo que antes no estaba disponible para nosotros.</p>
 
-        <p>En ese proceso, la realidad no cambia, pero sí cambia el mundo que somos capaces de percibir. Volver entonces a la relación entre <a href="/percepcion-y-realidad">la percepción y la realidad</a> permite reconocer con mayor claridad cómo esa transformación ocurre.</p>
+        <p>En ese proceso, la realidad no cambia, pero sí cambia el mundo que somos capaces de percibir. Volver entonces a la relación entre <a href="/percepcion-y-realidad/">la percepción y la realidad</a> permite reconocer con mayor claridad cómo esa transformación ocurre.</p>
     </article>
 </main>
 
@@ -192,9 +174,10 @@
         <p>
             Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
             Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
-            la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a> en crisis 
-            y la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a>. 
-            Bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a> 
+            la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
+            la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
+            y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
+            bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
             para entender que todos estamos en <a href="https://elmismobarco.com" target="_blank">el mismo barco</a>.
         </p>
     </div>
@@ -205,6 +188,7 @@
         <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
         <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
         <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
+        <li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
         <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
     </ul>
 </footer>
