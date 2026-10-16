@@ -24,38 +24,51 @@
     <meta name="twitter:description" content="No vemos las cosas como son, las vemos como somos. Cambiar la mirada es el primer paso para una mejor ejecución." />
     <meta name="twitter:image" content="https://lubezky.com/foto-sergio.jpg" />
 
+    <!-- Marcado Estructurado JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://lubezky.com/#sergio",
-          "name": "Sergio Lubezky",
-          "url": "https://lubezky.com/",
-          "sameAs": [
-            "https://lubezky.com/",
-            "https://elmismobarco.com/",
-            "https://inteligencia.com/",
-            "https://unnuevopuntodevista.com/",
-            "https://liderazgointerino.com/",
-            "https://coachdefoto.com/",
-            "https://musica.sergiolubezky.com/",
-            "https://www.linkedin.com/in/sergiolubezky/",
-            "https://x.com/slubezky",
-            "https://www.facebook.com/sergiolubezky/",
-            "https://www.instagram.com/sergiolubezky/"
-          ]
-        },
         {
           "@type": "WebSite",
           "@id": "https://unnuevopuntodevista.com/#website",
           "url": "https://unnuevopuntodevista.com/",
           "name": "Un Nuevo Punto de Vista",
           "description": "Perspectivas sobre cómo la percepción moldea la toma de decisiones y el liderazgo.",
-          "publisher": { "@id": "https://lubezky.com/#sergio" },
-          "accountablePerson": { "@id": "https://lubezky.com/#sergio" },
-          "about": { "@id": "https://lubezky.com/#sergio" }
+          "inLanguage": "es",
+          "publisher": {
+            "@type": "Person",
+            "@id": "https://lubezky.com/#person",
+            "name": "Sergio Lubezky",
+            "url": "https://lubezky.com/"
+          },
+          "accountablePerson": {
+            "@type": "Person",
+            "@id": "https://lubezky.com/#person"
+          },
+          "about": {
+            "@type": "Person",
+            "@id": "https://lubezky.com/#person"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://unnuevopuntodevista.com/#webpage",
+          "url": "https://unnuevopuntodevista.com/",
+          "name": "Un nuevo punto de vista | Cambiar la mirada para cambiar la acción",
+          "description": "La forma en la que vemos el world determina las decisiones que tomamos. Una exploración sobre la percepción estratégica por Sergio Lubezky.",
+          "inLanguage": "es",
+          "isPartOf": {
+            "@id": "https://unnuevopuntodevista.com/#website"
+          },
+          "author": {
+            "@type": "Person",
+            "@id": "https://lubezky.com/#person"
+          },
+          "about": {
+            "@type": "Person",
+            "@id": "https://lubezky.com/#person"
+          }
         }
       ]
     }
@@ -138,7 +151,9 @@
                 <li><a href="https://lubezky.com">Lubezky.com</a></li>
                 <li><a href="https://inteligencia.com">Inteligencia</a></li>
                 <li><a href="https://liderazgointerino.com">Liderazgo Interino</a></li>
+                <li><a href="https://clasesdefoto.com">Clases de Foto</a></li>
                 <li><a href="https://coachdefoto.com">Coach de Foto</a></li>
+                <li><a href="https://lomioeslafoto.com">Lo Mío es la Foto</a></li>
                 <li><a href="https://elmismobarco.com">El Mismo Barco</a></li>
                 <li><a href="https://unnuevopuntodevista.com/" class="current-location">Un Nuevo Punto de Vista</a></li>
                 <li><a href="https://musica.sergiolubezky.com">Música</a></li>
